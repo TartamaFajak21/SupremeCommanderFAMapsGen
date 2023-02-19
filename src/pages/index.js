@@ -13,7 +13,7 @@ export default function Home({data}) {
   const [ImagePBData,setImagePBData] = useState([...data]);
 
   useEffect(() => {
-    const unsubscribe = () => pb.collection('supremecommandermaps').subscribe('*', async ({ action, record }) => {
+    const unsubscribe = () => pb.collection('supremecommandermaps').subscribe('*', ({ action, record }) => {
       if (action === 'create') {
         const image_url = pb.getFileUrl(record, record.map_img);
         const download_url = pb.getFileUrl(record,record.map_zip);
