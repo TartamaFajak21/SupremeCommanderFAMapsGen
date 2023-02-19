@@ -5,7 +5,6 @@ import React,{ useState,useEffect } from 'react';
 import Modal from 'components/Modal.js';
 import { Righteous } from "@next/font/google";
 import { SERVER_DATA } from 'lib/serverConfig';
-import { useRouter } from "next/router";
 
 const FONT_STYLE = Righteous({subsets: ["latin"],weight: "400"})
 const pb = new PocketBase(SERVER_DATA);

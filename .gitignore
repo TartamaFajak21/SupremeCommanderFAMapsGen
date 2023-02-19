@@ -30,9 +30,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# Sentry
-.sentryclirc
-
-# Sentry
-next.config.original.js
