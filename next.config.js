@@ -18,10 +18,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-
-module.exports = withSentryConfig(
-  module.exports,
-  { silent: true },
-  { hideSourcemaps: true },
-  {dryRun: process.env.VERCEL_ENV !== "production"}
-);
